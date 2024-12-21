@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
+    tools:context=".FinalKuis">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/waktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60 s"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apa kata-kata yang ada dalam stiker ini?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/Question"
+            android:layout_width="304dp"
+            android:layout_height="199dp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/python"
+            android:textColor="@android:color/black"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/answersRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/answer1RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="waspadalah sosok atmin" />
+
+            <RadioButton
+                android:id="@+id/answer2RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="malas" />
+
+            <RadioButton
+                android:id="@+id/answer3RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Siapa sangka😲😲" />
+
+            <RadioButton
+                android:id="@+id/answer4RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kesalahan Berfikir" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/button_dark_tosca"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil : "
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:textColor="#155B2F"
+            android:layout_marginTop="16dp" />
+
+<!--        <Button-->
+<!--            android:id="@+id/selanjutnya"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:text="Selanjutnya"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:backgroundTint="@color/matcha"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:padding="12dp"-->
+<!--            android:layout_marginTop="16dp" />-->
+    </LinearLayout>
+</RelativeLayout>
